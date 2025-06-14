@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dy shop Polo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="contact">
+            ติดต่อ : 0990879835
+        </div>
+        <div class="social">
+            <img src="image\icon_facebook.png" alt="Facebook Logo" class="logo">
+            <span>Nathapong Chanabun</span>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Dy shop Polo</h1>
+        
+    </div>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="./image/S__8208393_0.jpg" alt="Product Image" 
+                 onclick="openLightbox(['./image/S__8208393_0.jpg', './image/S__8208395_0.jpg', './image/S__8208396_0.jpg'])">
+            <h3>Polo Ralph Lauren</h3>
+            <p>ม้าการ์ตูน ของแท้ 100%</p>
+            <p class="price">990.00THB</p>
+            <button>สั่งซื้อ</button>
+        </div>
+
+        <div class="product">
+            <img src="./image/S__8208398_0.jpg" alt="Product Image" 
+                 onclick="openLightbox(['./image/S__8208398_0.jpg', './image/S__8208400_0.jpg'])">
+            <h3>Polo Ralph Lauren 2</h3>
+            <p>ม้ากรมเข้ม ไม่แท้</p>
+            <p class="price">290.00THB</p>
+            <button>สั่งซื้อ</button>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <span class="prev" onclick="prevImage()">‹</span>
+        <img id="lightbox-img" src="" alt="Expanded Product Image">
+        <span class="next" onclick="nextImage()">›</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
